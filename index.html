@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Language Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Language Translator By Arpita_k</h1>
+    </header>
+
+    <main>
+        <div class="translator">
+            <div class="input-section">
+                <h2>Input Text</h2>
+                <textarea placeholder="Enter text here..." id="input-text"></textarea>
+                <label for="language-select">Select Language:</label>
+
+                <select id="language-select">
+                    <h2>International-languages</h2>
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="zh">Chinese</option>
+                </select>
+                <select id="language-select">
+                    <h2>International-languages</h2>
+                    <option value="en">Hindi</option>
+                    <option value="es">Marathi</option>
+                    <option value="fr">Kannada</option>
+                    <option value="de">Tamil</option>
+                    <option value="zh">Urdu</option>
+                </select>
+            </div>
+            <div class="output-section">
+                <h2>Translated Text</h2>
+                <textarea id="output-text" placeholder="Translation will appear here..." readonly></textarea>
+            </div>
+            <button class="translate-button">Translate</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Language Translator. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

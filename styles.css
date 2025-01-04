@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    color: #333;
+    background-image: url("https://f5b623aa.delivery.rocketcdn.me/wp-content/uploads/elementor/thumbs/Blog_Exploring-Natural-Language-Processing-in-Translation-qmegpcuhtaseygovm7jedjglrp2tvtc68ev68r6p6o.jpg");
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Translator Section */
+.translator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-section,
+.output-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background: #f9f9f9;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background: #fff;
+}
+
+select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button.translate-button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button.translate-button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .translator {
+        grid-template-columns: 1fr;
+    }
+
+    button.translate-button {
+        grid-column: span 1;
+    }
+}
